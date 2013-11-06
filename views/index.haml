@@ -1,0 +1,17 @@
+!!!
+%html
+  %head
+  %body
+    %h1 Welcome
+    %p Apple
+    %h1 Levels
+    %h2 level 1
+    %p Let's see how hard it is to get logged in
+    %form{ :action => "/level1", :method => "post"}
+      %label Username
+      %input{:type => "text", :name => "username", :class => "text"}
+      %br
+      %label Password
+      %input{:type => "password", :name => "password", :class => "text"}
+      %br
+      %input{:type => "submit", :value => "Send", :class => "button"}.
