@@ -1,0 +1,13 @@
+%h3 Find Tweets by User
+%p I bet the president has some private tweets if you tried hard enough
+%form{ action: "/level2", method: "post"}
+  %label handle
+  %input{ type: "text", name: "handle", class: "text"}
+  %br
+  %input{type: "submit", value: "Send", class: "button"}
+
+%h3 Tweets
+-@tweets.each do |tweet|
+  %h6=tweet[:handle] 
+  %p=tweet[:text]
+  %br

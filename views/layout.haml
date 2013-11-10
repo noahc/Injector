@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %link{:type => "text/css", :rel => "stylesheet", :href => "bootstrap.css"}
+    %link{:type => "text/css", :rel => "stylesheet", :href => "bootstrap-theme.css"}
+  %body
+    .container
+      .header
+        %ul.nav.nav-pills.pull-right
+          %li.active
+            %a{href: "/"} Home
+          %li
+            %a{href: "/about"} About
+          %li
+            %a{href: "/load"} Load Databases
+          %li
+            %a{href: "/reset"} Reset All Databases
+        %h3.text-muted Injector 
+        = yield
+        .footer
+          %p © Company 2013 

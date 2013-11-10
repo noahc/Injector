@@ -1,0 +1,5 @@
+* clean up level1
+* extract methods into file
+* make routes call methods in external file
+  * should have load/reset/reset all/load all
+*look at level8 and see if I can duplicate it
