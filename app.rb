@@ -5,6 +5,11 @@ require 'securerandom'
 require 'logger'
 require './levels/level1.rb'
 require './levels/level2.rb'
+require './levels/level3.rb'
+require './tables/users.rb'
+require './tables/tweets.rb'
+require 'pry'
+require 'pry-nav'
 
 DB = Sequel.postgres('breaker101', user: 'breaker101', 
                                    password: 'br3ak3r101', 

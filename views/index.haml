@@ -1,41 +1,44 @@
 .jumbotron
   %h1 SQL Injection Lab
   %p.lead A basic introduction to SQL Injection. Multiple Levels each help you practice a particular technique. If you get stuck checkout the ansewers section in the upper left hand corner. There's also a link to reset all data and to load all tables for the first time. 
+%h3 Tables
+%div.table-responsive
+  %table.table
+    %tr
+      %th Table Name
+      %th Levels Where Table Is Used
+      %th Load Table
+      %th Reset Table
+    %tr
+      %td Users
+      %td 1,3
+      %td 
+        %a.btn.btn-sm.btn-danger{href: "/users/load"} Load level
+      %td 
+        %a.btn.btn-sm.btn-danger{href: "/users/reset"} Reset level
+    %tr
+      %td Tweets
+      %td 2
+      %td 
+        %a.btn.btn-sm.btn-danger{href: "/tweets/load"} Load level
+      %td 
+        %a.btn.btn-sm.btn-danger{href: "/tweets/reset"} Reset level
+
+%h3 Levels
 .row.marketing
   .col-lg-6
     %h4 Level1 
     %a.btn.btn-sm.btn-success{href: "/level1"} Get Started 
-    %a.btn.btn-sm.btn-danger{href: "/level1/load"} Load level
-    %a.btn.btn-sm.btn-danger{href: "/level1/reset"} Reset level
     %a.btn.btn-sm.btn-warning{href: "/level1/solutions"} Solutions and Explinations
     %p Basic SQL injection. See how hard it is to get logged in as an admin
   .col-lg-6
     %h4 Level2
     %a.btn.btn-sm.btn-success{href: "/level2"} Get Started 
-    %a.btn.btn-sm.btn-danger{href: "/level2/load"} Load level
-    %a.btn.btn-sm.btn-danger{href: "/level2/reset"} Reset level
     %a.btn.btn-sm.btn-warning{href: "/level2/solutions"} Solutions and Explinations
     %p The president of your country, a true patriot, has a couple public tweets. Find his private tweets to reveal his true entitions.
   .col-lg-6
     %h4 Level3
     %a.btn.btn-sm.btn-success{href: "/level3"} Get Started 
-    %a.btn.btn-sm.btn-danger{href: "/level3/load"} Load level
-    %a.btn.btn-sm.btn-danger{href: "/level3/reset"} Reset level
     %a.btn.btn-sm.btn-warning{href: "/level3/solutions"} Solutions and Explinations
     %p This is sort of annoying. Being able to read tweets is cool, but I really want to be an admin
 
-
--#     %h4 Level 3
--#     %p Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
--#     %h4 Level 5
--#     %p Maecenas sed diam eget risus varius blandit sit amet non magna.
--#   .col-lg-6
--#     %h4 Level 2
--#     %p Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
--#     %h4 Level 6
--#     %p Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
--#     %h4 Level 7
--#     %p Maecenas sed diam eget risus varius blandit sit amet non magna.
--#   %h1 Welcome
--#   %p A Basic Intro
--#   
