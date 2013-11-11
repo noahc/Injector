@@ -6,8 +6,10 @@ require 'logger'
 require './levels/level1.rb'
 require './levels/level2.rb'
 require './levels/level3.rb'
+require './levels/level4.rb'
 require './tables/users.rb'
 require './tables/tweets.rb'
+require './tables/documents.rb'
 require 'pry'
 require 'pry-nav'
 
@@ -30,22 +32,4 @@ get '/load' do
   load_level2
   redirect '/'
   # load_level2
-end
-
-def reset_level8
-  DB.drop_table :documents
-  DB.create_table :documents do
-     primary_key :id
-     String :name
-     String :filename
-     String :mimetype
-     String :sessid
-  end
-
-  5.times do
-    sessid = SecureRandom.hex
-    5.times do |n|
-      documents.insert( name: "name#{n}", filename: "filename#{n}", mimetype: "text/plain", sessid: sessid)
-    end
-  end
 end
